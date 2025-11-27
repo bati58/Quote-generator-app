@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quote Generator</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external custom styles -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Configure Tailwind theme (must remain in HTML for CDN setup) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-night': '#0a1014',
+                        'gold-accent': '#FFD700',
+                        'author-red': '#E53E3E',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+
+    <!-- Decorative Quote Marks (Mimicking the background elements) -->
+    <span class="quote-mark quote-top-left">“</span>
+    <span class="quote-mark quote-bottom-right">”</span>
+
+    <!-- Main Content Area -->
+    <div class="relative z-10 flex flex-col items-center max-w-lg w-full md:p-8 p-4">
+
+        <!-- Title -->
+        <h1 id="main-title" class="mb-10 text-xl md:text-2xl">
+            JavaScript Quote Generator
+        </h1>
+
+        <!-- Quote Card -->
+        <div class="bg-white p-6 md:p-12 rounded-xl shadow-2xl w-full" style="min-height: 300px;">
+            <div class="flex flex-col justify-between h-full">
+                <!-- Quote Text -->
+                <p id="quote-text" class="text-center text-xl md:text-2xl font-medium text-gray-800 mb-8">
+                    Click the button below to generate an inspirational quote!
+                </p>
+
+                <!-- Author and Button Container -->
+                <div class="flex flex-col items-center space-y-6">
+                    <!-- Author Name (Red and Bold) -->
+                    <span id="author-name" class="text-center text-author-red font-bold text-lg md:text-xl uppercase tracking-wider">
+                        — WELCOME —
+                    </span>
+
+                    <!-- New Quote Button -->
+                    <button id="new-quote-btn" class="rounded-lg shadow-lg">
+                        New Quote
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
