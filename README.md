@@ -6,6 +6,7 @@
 This is a simple, modern, and stylish web application designed to generate random inspirational quotes with a single click. The design features a dark, gold-accented theme, providing a visually appealing and focused user experience.
 
 The project is built entirely using vanilla JavaScript, HTML, and Tailwind CSS (via CDN) for a lightweight and highly performant front-end experience.
+Your site is live at https://bati58.github.io/Quote-generator-app/
 
 ✨ Features
 
